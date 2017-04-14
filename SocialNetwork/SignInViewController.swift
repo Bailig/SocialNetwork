@@ -14,6 +14,9 @@ import FirebaseAuth
 
 class SignInViewController: UIViewController {
 
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
     @IBAction func facebookLoginBtnPressed(_ sender: Any) {
         let fBLoginManager = FBSDKLoginManager()
         
@@ -32,6 +35,18 @@ class SignInViewController: UIViewController {
             }
         }
     }
+    @IBAction func loginBtnPressed(_ sender: Any) {
+        guard let email = emailTextField.text, let password = passwordTextField.text else { return }
+        FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
+            guard let user = user else {
+                if let error = error {
+                    print("error: \(error.localizedDescription)")
+                }
+                return
+            }
+            print(user.email ?? "user email nil")
+        })
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,8 +63,8 @@ class SignInViewController: UIViewController {
                 }
                 return
             }
-            print(user.email)
-            print(user.displayName)
+            print(user.email ?? "user email nil")
+            print(user.displayName ?? "name nil")
         })
     }
 
