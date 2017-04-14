@@ -10,8 +10,9 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-class SignUpViewController: UIViewController {
-
+class SignUpViewController: UIViewController, Signinable {
+    
+    
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
@@ -24,7 +25,10 @@ class SignUpViewController: UIViewController {
                 }
                 return
             }
-            print(user.email ?? "user email nil")
+            // user authorized
+            // save keychain
+            self.saveKeychain(userId: user.uid)
+            self.performSegue(withIdentifier: SegueId.mainViewController.rawValue, sender: nil)
         })
     }
     @IBAction func cancelBtnPressed(_ sender: Any) {

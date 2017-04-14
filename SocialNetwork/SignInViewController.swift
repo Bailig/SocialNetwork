@@ -11,9 +11,12 @@ import FBSDKCoreKit
 import FBSDKLoginKit
 import Firebase
 import FirebaseAuth
+import SwiftKeychainWrapper
 
-class SignInViewController: UIViewController {
+class SignInViewController: UIViewController, Signinable {
 
+    let userIdKey = "userId"
+    
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
@@ -37,6 +40,7 @@ class SignInViewController: UIViewController {
     }
     @IBAction func loginBtnPressed(_ sender: Any) {
         guard let email = emailTextField.text, let password = passwordTextField.text else { return }
+        // authenticate user
         FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
             guard let user = user else {
                 if let error = error {
@@ -44,14 +48,27 @@ class SignInViewController: UIViewController {
                 }
                 return
             }
-            print(user.email ?? "user email nil")
+            // user authenticated
+            // save keychain
+            self.saveKeychain(userId: user.uid)
+            self.performSegue(withIdentifier: SegueId.mainViewController.rawValue, sender: nil)
         })
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        
+        if let _ = KeychainWrapper.standard.string(forKey: Key.userId.rawValue) {
+            performSegue(withIdentifier: SegueId.mainViewController.rawValue, sender: nil)
+        }
+    }
+    
+    
 
     /// helper
     func firebaseAuth(withCredential credential: FIRAuthCredential) {
@@ -63,8 +80,10 @@ class SignInViewController: UIViewController {
                 }
                 return
             }
-            print(user.email ?? "user email nil")
-            print(user.displayName ?? "name nil")
+            // user authenticated
+            // save keychain
+            self.saveKeychain(userId: user.uid)
+            self.performSegue(withIdentifier: SegueId.mainViewController.rawValue, sender: nil)
         })
     }
 

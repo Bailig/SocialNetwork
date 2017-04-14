@@ -168,6 +168,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="tBW-GX-UAh" id="umP-bX-Obc"/>
                         <outlet property="passwordTextField" destination="MA2-5r-SnN" id="xNm-9f-K4N"/>
+                        <segue destination="G7B-r3-eOX" kind="show" identifier="MainViewController" id="xA0-rF-cas"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -265,11 +266,51 @@
                     <connections>
                         <outlet property="emailTextField" destination="PKh-zS-hEQ" id="dQB-op-Chx"/>
                         <outlet property="passwordTextField" destination="dba-1T-TSv" id="oGL-Sl-5Vb"/>
+                        <segue destination="G7B-r3-eOX" kind="show" identifier="MainViewController" id="W6j-y5-G7r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VHF-Hn-ZkD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="785" y="123"/>
+            <point key="canvasLocation" x="943" y="-631"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="F80-aZ-axj">
+            <objects>
+                <viewController id="G7B-r3-eOX" customClass="MainViewController" customModule="SocialNetwork" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K6f-gZ-Bwc"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gch-y7-5OJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mwq-JA-wW0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31m-mF-ZvC">
+                                <rect key="frame" x="163" y="317" width="49" height="32"/>
+                                <color key="backgroundColor" red="0.55530619619999999" green="0.48609727619999998" blue="0.47272574899999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                <state key="normal" title="Log out">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logOutBtnPressed:" destination="G7B-r3-eOX" eventType="touchUpInside" id="eJc-pj-hZb"/>
+                                    <action selector="loginBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qfg-hm-62F"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99497312307357788" green="0.89816874265670776" blue="0.94695430994033813" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="31m-mF-ZvC" firstAttribute="centerY" secondItem="mwq-JA-wW0" secondAttribute="centerY" id="P7m-Y3-NFO"/>
+                            <constraint firstItem="31m-mF-ZvC" firstAttribute="centerX" secondItem="mwq-JA-wW0" secondAttribute="centerX" id="cYX-Sl-Cyj"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uFK-hT-daT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="943" y="123"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="xA0-rF-cas"/>
+    </inferredMetricsTieBreakers>
 </document>
