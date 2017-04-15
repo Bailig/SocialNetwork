@@ -1,18 +1,18 @@
 //
-//  GetStartedButton.swift
+//  ShadowView.swift
 //  SocialNetwork
 //
-//  Created by Bailig Abhanar on 2017-04-14.
+//  Created by Bailig Abhanar on 2017-04-13.
 //  Copyright © 2017 Bailig Abhanar. All rights reserved.
 //
 
 import UIKit
 
-class GetStartedButton: UIButton, RoundableButton {
-
+class ShadowView: UIView, DropShadow {
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        addRoundedCorners()
-        
+        addDropShadow()
     }
 }
+

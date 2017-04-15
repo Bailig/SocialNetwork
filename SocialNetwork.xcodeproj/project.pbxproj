@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		023BF2A01EA045FA00A404C6 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BF29F1EA045FA00A404C6 /* SignInView.swift */; };
+		023BF2A01EA045FA00A404C6 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BF29F1EA045FA00A404C6 /* ShadowView.swift */; };
 		023BF2A31EA0474500A404C6 /* DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BF2A21EA0474500A404C6 /* DropShadow.swift */; };
 		026460781EA1566A006F91FD /* Signinable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026460771EA1566A006F91FD /* Signinable.swift */; };
 		0264607A1EA15AC9006F91FD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026460791EA15AC9006F91FD /* MainViewController.swift */; };
 		0264607C1EA15CB9006F91FD /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0264607B1EA15CB9006F91FD /* Identifiers.swift */; };
+		0286C5241EA1DA3A009DB6E0 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0286C5231EA1DA3A009DB6E0 /* CircleImageView.swift */; };
+		0286C5261EA1DA61009DB6E0 /* Circlable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0286C5251EA1DA61009DB6E0 /* Circlable.swift */; };
 		029A7A4C1EA0081900B36DF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029A7A4B1EA0081900B36DF8 /* AppDelegate.swift */; };
 		029A7A4E1EA0081900B36DF8 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029A7A4D1EA0081900B36DF8 /* SignInViewController.swift */; };
 		029A7A511EA0081900B36DF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 029A7A4F1EA0081900B36DF8 /* Main.storyboard */; };
@@ -19,17 +21,19 @@
 		029A7A561EA0081900B36DF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 029A7A541EA0081900B36DF8 /* LaunchScreen.storyboard */; };
 		029A7A5E1EA008D300B36DF8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 029A7A5D1EA008D300B36DF8 /* GoogleService-Info.plist */; };
 		02A64D1A1EA08E8400CE8367 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A64D191EA08E8400CE8367 /* SignUpViewController.swift */; };
-		02A7B0E41EA0843C00C951C2 /* GetStartedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7B0E31EA0843C00C951C2 /* GetStartedButton.swift */; };
+		02A7B0E41EA0843C00C951C2 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7B0E31EA0843C00C951C2 /* RoundedButton.swift */; };
 		02A7B0E61EA0849900C951C2 /* RoundableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7B0E51EA0849900C951C2 /* RoundableButton.swift */; };
 		76CF270A59C83E8507315B45 /* Pods_SocialNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 399523CF3666500416313B47 /* Pods_SocialNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		023BF29F1EA045FA00A404C6 /* SignInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		023BF29F1EA045FA00A404C6 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		023BF2A21EA0474500A404C6 /* DropShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropShadow.swift; sourceTree = "<group>"; };
 		026460771EA1566A006F91FD /* Signinable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signinable.swift; sourceTree = "<group>"; };
 		026460791EA15AC9006F91FD /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0264607B1EA15CB9006F91FD /* Identifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
+		0286C5231EA1DA3A009DB6E0 /* CircleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
+		0286C5251EA1DA61009DB6E0 /* Circlable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Circlable.swift; sourceTree = "<group>"; };
 		029A7A481EA0081900B36DF8 /* SocialNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		029A7A4B1EA0081900B36DF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		029A7A4D1EA0081900B36DF8 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -39,7 +43,7 @@
 		029A7A571EA0081900B36DF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		029A7A5D1EA008D300B36DF8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		02A64D191EA08E8400CE8367 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		02A7B0E31EA0843C00C951C2 /* GetStartedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetStartedButton.swift; sourceTree = "<group>"; };
+		02A7B0E31EA0843C00C951C2 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		02A7B0E51EA0849900C951C2 /* RoundableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundableButton.swift; sourceTree = "<group>"; };
 		16A037E3BB502EB094ED396F /* Pods-SocialNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialNetwork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialNetwork/Pods-SocialNetwork.debug.xcconfig"; sourceTree = "<group>"; };
 		399523CF3666500416313B47 /* Pods_SocialNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +68,7 @@
 				023BF2A21EA0474500A404C6 /* DropShadow.swift */,
 				02A7B0E51EA0849900C951C2 /* RoundableButton.swift */,
 				026460771EA1566A006F91FD /* Signinable.swift */,
+				0286C5251EA1DA61009DB6E0 /* Circlable.swift */,
 			);
 			name = Protocol;
 			sourceTree = "<group>";
@@ -79,8 +84,9 @@
 		028DEF441EA00C5C00424B19 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				023BF29F1EA045FA00A404C6 /* SignInView.swift */,
-				02A7B0E31EA0843C00C951C2 /* GetStartedButton.swift */,
+				023BF29F1EA045FA00A404C6 /* ShadowView.swift */,
+				02A7B0E31EA0843C00C951C2 /* RoundedButton.swift */,
+				0286C5231EA1DA3A009DB6E0 /* CircleImageView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -274,14 +280,16 @@
 			files = (
 				02A7B0E61EA0849900C951C2 /* RoundableButton.swift in Sources */,
 				02A64D1A1EA08E8400CE8367 /* SignUpViewController.swift in Sources */,
-				023BF2A01EA045FA00A404C6 /* SignInView.swift in Sources */,
+				0286C5241EA1DA3A009DB6E0 /* CircleImageView.swift in Sources */,
+				023BF2A01EA045FA00A404C6 /* ShadowView.swift in Sources */,
 				029A7A4E1EA0081900B36DF8 /* SignInViewController.swift in Sources */,
-				02A7B0E41EA0843C00C951C2 /* GetStartedButton.swift in Sources */,
+				02A7B0E41EA0843C00C951C2 /* RoundedButton.swift in Sources */,
 				023BF2A31EA0474500A404C6 /* DropShadow.swift in Sources */,
 				0264607A1EA15AC9006F91FD /* MainViewController.swift in Sources */,
 				029A7A4C1EA0081900B36DF8 /* AppDelegate.swift in Sources */,
 				026460781EA1566A006F91FD /* Signinable.swift in Sources */,
 				0264607C1EA15CB9006F91FD /* Identifiers.swift in Sources */,
+				0286C5261EA1DA61009DB6E0 /* Circlable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

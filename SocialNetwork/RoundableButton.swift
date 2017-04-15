@@ -13,8 +13,8 @@ protocol RoundableButton { }
 extension RoundableButton where Self: UIButton {
     func addRoundedCorners() {
         backgroundColor = UIColor.clear
-        layer.cornerRadius = 20
-        layer.borderWidth = 1
+        layer.cornerRadius = 18
+        layer.borderWidth = 2
         layer.borderColor = UIColor(hue: 10, saturation: 0.15, brightness: 0.56, alpha: 1).cgColor
     }
 }
